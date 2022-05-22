@@ -34,7 +34,7 @@ class KakaoSignTest(TestCase):
             'profile': {
                 'nickname': '지수',
             },
-            'email': 'gsoosuu@gmail.com'
+            'email': 'jisoo@gmail.com'
         }
     }
 
@@ -56,13 +56,13 @@ class KakaoSignTest(TestCase):
                 return {
                     'id': 123456789,
                     'properties': {
-                        'nickname': '현정'
+                        'nickname': '수지'
                     },
                     'kakao_account': {
                         'profile': {
-                            'nickname':'현정',
+                            'nickname':'수지',
                         },
-                        'email' : 'gsoosuu@gmail.com'
+                        'email' : 'susie@gmail.com'
                     }
                 }
 
@@ -73,4 +73,4 @@ class KakaoSignTest(TestCase):
 
         access_token = jwt.encode({'id':2}, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
         self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json(), {'message' : 'SUCCESS', 'access_token' : access_token, 'nickname': '현정'})
+        self.assertEqual(response.json(), {'message' : 'SUCCESS', 'access_token' : access_token, 'nickname': '수지'})
