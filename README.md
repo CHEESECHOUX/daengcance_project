@@ -15,13 +15,11 @@
 1. Initial-Settings
 - virtual env
 - create DB
-
-- project repository Clone
 - Django project
 - .gitignore
 - python manage.py runserver
 
-2. modelings
+2. Modelings
 - Create git branch
 - startapp 'users', 'core', 'petsitters', 'reviews', 'bookings'
 
@@ -29,17 +27,24 @@
 - CSV Files
 - DB_uploader.py
 
+
 ## Views.py
 1. Kakao Login
-- kakao login View
+- kakao login view.py
 - Define URLconf(Signup) 
 
 2. Petsitter
-- Petsitter list View
-- Petsitter detail View
+- Petsitter list view.py
+- Petsitter detail view.py
+
 
 ## Tests.py
-1. Kakao login test code
-2. Petsitter list, Petsitter detail test code 
+1. Kakao login test.py
+2. Petsitter list, Petsitter detail test.py 
+
 
 ## API Documentation
+
+
+## Demonstration video
+https://www.youtube.com/watch?v=S6aS-q1nbnk
